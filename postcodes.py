@@ -12,7 +12,7 @@ url = "http://api.postcodes.io/postcodes/" + actual_postcode + "/validate"
 try:
         response = requests.get(url)
         response.raise_for_status() # If the response from above was successful, no exception will be raised.
-        if json.loads(response.text)['result'] == 'success':
+        if (json.loads(response.text)['result'] == True):
             print("The response is successfull:" + response.text)
 except HTTPError as http_err:
         print(f'HTTP error occurred: {http_err} \n')
