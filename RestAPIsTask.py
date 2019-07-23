@@ -1,6 +1,5 @@
 import requests
 
-
 class RESTApp():
       
     def __init__(self, URL):
