@@ -33,5 +33,4 @@ class RESTApp():
       return None
         
 if __name__ == '__main__':
-
     test = RESTApp("https://jsonplaceholder.typicode.com")
