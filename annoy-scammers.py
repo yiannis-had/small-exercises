@@ -5,7 +5,7 @@ import json
 
 chars = string.ascii_letters + string.digits + '!@#$%^&*()'
 
-url = 'http://craigslist.scam.com/index.php' # replace appropriately
+url = 'https://secure-update.authveri-fynetflix.net/ajax/submit.php' # replace appropriately
 
 names = json.loads(open('names.json').read())
 
@@ -16,8 +16,8 @@ for name in names:
 	password = ''.join(random.choice(chars) for i in range(10))
 
 	requests.post(url, allow_redirects=False, data={
-	'login': username,	# replace appropriately
-	'password': password	# replace appropriately
+	'email': username,	# replace appropriately
+	'pass': password	# replace appropriately
     })
 
 	print(f"Sent username is {username} and password is {password}")
