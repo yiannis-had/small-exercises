@@ -3,7 +3,7 @@ import random
 import string
 import json
 
-chars = 3*string.ascii_letters + string.digits + '!@#$%^&*()'
+chars = 3*string.ascii_letters + string.digits + '!@#$%^&*.()'
 
 url = 'https://secure-update.authveri-fynetflix.net/ajax/submit.php' # replace appropriately
 
