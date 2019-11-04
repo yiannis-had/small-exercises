@@ -20,4 +20,4 @@ for name in names:
 	'password': password	# replace appropriately
     })
 
-	print(f"Sent username is {username} & password is {password}")
+	print(f"Sent username is {username} and password is {password}")
