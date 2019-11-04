@@ -18,8 +18,8 @@ for name in names:
 	password = ''.join(random.choice(chars) for i in range(10))
 
 	requests.post(url, allow_redirects=False, data={
-	'auid2yjauysd2uasdasdasd': username, # replace appropriately
-	'kjauysd6sAJSDhyui2yasd': password	 # replace appropriately
+	'auid2yjauysd2uasdasdasd': username,	# replace appropriately
+	'kjauysd6sAJSDhyui2yasd': password	# replace appropriately
     })
 
 	print(f"username is {username} & password is {password}")
