@@ -3,7 +3,7 @@ import os
 import praw
 import urllib
 
-reddit = praw.Reddit(client_id='YOUR_CLIENT_ID', client_secret='YOUR_CLIENT_SECRET', user_agent='YOUR_APP_NAME', username='YOUR_USERNAME', password='YOUR_PASSWORD')
+reddit = praw.Reddit(client_id='CLIENT_ID', client_secret=CLIENT_SECRET', user_agent='APP_NAME', username='USERNAME', password='PASSWORD')
 
 DOWNLOADS_DIR = 'subreddit-pictures/'
 
@@ -22,7 +22,7 @@ url = [post.url for post in hot_subreddit]
 def download_pictures():
     for value in url:
         name = os.path.basename(value) # taking only the value after '/' from the url as name
-        os.makedirs(os.path.dirname(DOWNLOADS_DIR), exist_ok=True) # makes the directory where the photos are saved if it doesn't exist
+        os.makedirs(os.path.dirname(DOWNLOADS_DIR), exist_ok=True) # creates the directory where the photos are saved if it doesn't exist
         filename = os.path.join(DOWNLOADS_DIR, name) # combine the name and the downloads directory to get the local filename
         if not os.path.isfile(filename):
             urllib.request.urlretrieve(value, filename) # if the file doesn't exist, it gets downloaded
