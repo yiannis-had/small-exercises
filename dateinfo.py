@@ -50,5 +50,3 @@ def recurse():
             print("permissions=" + str(os.stat(filename).st_mode))
         except:
             pass
-
-recurse()
