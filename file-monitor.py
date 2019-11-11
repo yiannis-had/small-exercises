@@ -5,6 +5,7 @@ import os
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import hashlib
+import dateinfo
 
 
 def hash_file(filename):
@@ -88,6 +89,7 @@ class MyHandler(FileSystemEventHandler):
 
 
 if __name__ == "__main__":
+    dateinfo.recurse()
     event_handler = MyHandler()
     observer = Observer()
     path = sys.argv[1] if len(sys.argv) > 1 else "."
