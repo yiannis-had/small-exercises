@@ -6,7 +6,7 @@ import requests
 import pyperclip
 
 
-url = "https://chipmonkzslots.com/offers"
+url = " "
 
 sleeptime = 2
 
