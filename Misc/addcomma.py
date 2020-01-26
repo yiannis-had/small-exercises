@@ -406,26 +406,29 @@ table = """
 446	EncodedListStatusText
 """
 
-def split_string(string): 
-  
-    # Split the string based on tab delimiter 
-    list_string = string.split('\t') 
-      
-    return list_string 
-  
-def join_string(list_string): 
-  
-    # Join the string based on comma delimiter 
-    string = ','.join(list_string) 
-      
-    return string 
-  
-if __name__ == '__main__': 
+
+def split_string(string):
+
+    # Split the string based on tab delimiter
+    list_string = string.split("\t")
+
+    return list_string
+
+
+def join_string(list_string):
+
+    # Join the string based on comma delimiter
+    string = ",".join(list_string)
+
+    return string
+
+
+if __name__ == "__main__":
     string = table
-      
-    # Splitting a string 
-    list_string = split_string(string) 
-  
-     # Join list of strings into one 
-    new_string = join_string(list_string) 
-    print(new_string) 
+
+    # Splitting a string
+    list_string = split_string(string)
+
+    # Join list of strings into one
+    new_string = join_string(list_string)
+    print(new_string)

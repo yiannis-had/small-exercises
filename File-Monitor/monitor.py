@@ -7,6 +7,7 @@ from watchdog.events import FileSystemEventHandler
 import hashlib
 import dateinfo
 
+
 def hash_file(filename):
     h = hashlib.sha1()
     with open(filename, "rb") as file:

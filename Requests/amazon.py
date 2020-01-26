@@ -6,16 +6,18 @@ import requests
 import pyperclip
 
 
-url = " "
+url = "https://chipmonkzslots.com/offers"
 
-sleeptime = 2
+sleeptime = 1.25
 
 ignore = [
-    "AQ6W-NMPZK3-72SB9",
+    "AQGM-G4W9DR-5SHBS",
     "AQB7-9FCCK3-M6LGA",
     "AQBQ-S2DAAC-M3KBP",
     "AQGF-GSY77H-LXSB6",
     "AQ6W-NMPZK3-72SB9",
+    "AQWE-CM87M9-3ZABL",
+    "AQGM-G4W9DR-5SHBS",
 ]
 
 

@@ -27,11 +27,12 @@ def size(path_to_file):
     t = os.path.getsize(path_to_file)
     return str(t)
 
+
 def recurse():
     files = []
-    for r, d, f in os.walk('.'):
+    for r, d, f in os.walk("."):
         for file in f:
-            if '.git' in os.path.join(r, file):
+            if ".git" in os.path.join(r, file):
                 pass
             else:
                 files.append(os.path.join(r, file))
