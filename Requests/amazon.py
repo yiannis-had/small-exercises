@@ -7,7 +7,7 @@ import pyperclip
 from selenium import webdriver
 
 
-url = "https://chipmonkzslots.com/offers"
+url = " "
 
 sleeptime = 1.25
 
