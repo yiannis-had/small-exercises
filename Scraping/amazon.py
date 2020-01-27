@@ -8,7 +8,7 @@ from selenium import webdriver
 
 url = " "
 
-sleeptime = 1.25
+sleeptime = 0.51
 
 ignore = [
     "AQGM-G4W9DR-5SHBS",
