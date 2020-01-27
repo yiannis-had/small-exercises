@@ -1,4 +1,3 @@
-import hashlib
 import time
 import win32.win32api
 import re
