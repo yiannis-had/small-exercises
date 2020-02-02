@@ -8,8 +8,6 @@ from selenium import webdriver
 
 url = " "
 
-sleeptime = 0.51
-
 ignore = [
     "AQGM-G4W9DR-5SHBS",
     "AQB7-9FCCK3-M6LGA",
@@ -45,4 +43,3 @@ while 1:
         win32.win32api.MessageBox(0, "CHANGED", "CHANGED", 0x00001000)
         print("Changed")
         break
-    time.sleep(sleeptime)
