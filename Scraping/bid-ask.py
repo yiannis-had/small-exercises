@@ -30,5 +30,6 @@ final = final.rename(
         "Ask_y": "First Ask",
     }
 )
+final = final.rename_axis("Date")
 
 final.to_csv("ticks.csv")
