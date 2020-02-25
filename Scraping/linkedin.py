@@ -12,7 +12,7 @@ auth = linkedin.LinkedInDeveloperAuthentication(
     USER_TOKEN,
     USER_SECRET,
     RETURN_URL,
-    permissions=linkedin.PERMISSIONS.enums.values(),
+    linkedin.PERMISSIONS.enums.values(),
 )
 
 app = linkedin.LinkedInApplication(auth)
