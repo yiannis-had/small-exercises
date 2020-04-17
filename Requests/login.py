@@ -1,7 +1,9 @@
-import requests  # Can also use requests-html
+import requests 
 
-with requests.Session() as session:
+with requests.Session() as s:
     url = ""
-    USERNAME = raw_input("Enter your Username: ")
-    PASSWORD = raw_input("Enter your Password: ")
-    login_data = dict(username=USERNAME, password=PASSWORD)
+    username = input("Username:")
+    password = input("Password:")
+    data = {username: username, password: password}
+    r = s.post(url, data=data)
+    print(s.cookies.get_dict())
