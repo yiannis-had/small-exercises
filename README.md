@@ -1,2 +1,2 @@
-# small-exercises
-Ad-hoc tasks or exercises I've completed
+# small-programs
+Ad-hoc tasks or programs I've completed
